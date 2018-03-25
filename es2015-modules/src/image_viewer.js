@@ -1,6 +1,13 @@
+import large from '../assets/large.png';
+import small from '../assets/small.png';
+
 import '../styles/image-viewer.css'
 
 const img = document.createElement('img');
-img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1280px-Flag_of_Australia_%28converted%29.svg.png';
-
+img.src = small;
 document.body.appendChild(img);
+
+const large_img = document.createElement('img');
+large_img.src = large;
+
+document.body.appendChild(large_img);
