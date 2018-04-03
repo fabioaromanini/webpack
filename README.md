@@ -16,3 +16,6 @@ Webpack may also split your code into several js pieces, thus, decreasing the am
 when accessing a specific part of your project (your login page, for instance, does not require your home page code).
 While this increases the amount of requests, it will decrease the size of those requests. If a key page of your application is often accessed,
 it's access time may be reduced if it only requires you to download a small amount of code!
+
+### Vendor asset caching (section 5)
+Major browsers use caching as a way to improve the velocity that pages take to load. With Webpack and code splitting, we can take advantage of it. First, the vendor (third party) code should be separated from the application source code, so that it won't be downloaded everytime the source code is updated.
