@@ -18,4 +18,7 @@ While this increases the amount of requests, it will decrease the size of those 
 it's access time may be reduced if it only requires you to download a small amount of code!
 
 ### Vendor asset caching (section 5)
-Major browsers use caching as a way to improve the velocity that pages take to load. With Webpack and code splitting, we can take advantage of it. First, the vendor (third party) code should be separated from the application source code, so that it won't be downloaded everytime the application's main code is updated (i.e., if you update a feature and still use the same libs, there is no need to download the libs code).
+Major browsers use caching as a way to improve the velocity that pages take to load. With Webpack and code splitting, we can take
+advantage of it. First, the vendor (third party) code should be separated from the application source code, so that it won't be
+downloaded everytime the application's main code is updated (i.e., if you update a feature and still use the same libs, there is
+no need to download once again the same old libs code).
