@@ -17,11 +17,14 @@ when accessing a specific part of your project (your login page, for instance, d
 While this increases the amount of requests, it will decrease the size of those requests. If a key page of your application is often accessed,
 it's access time may be reduced if it only requires you to download a small amount of code!
 
-### Vendor asset caching (section 5)
+### Cache (section 5)
 Major browsers use caching as a way to improve the velocity that pages take to load. With Webpack and code splitting, we can take
 advantage of it. First, the vendor (third party) code should be separated from the application source code, so that it won't be
 downloaded everytime the application's main code is updated (i.e., if you update a feature and still use the same libs, there is
-no need to download once again the same old libs code).
+no need to download once again the same old libs code). After that, you should ensure that the cached version of the user is up 
+to date, and for that, chunk hash is used. Chunk hash is a string related to the content of the file. Whenever two file haves
+exaclty the same content, their hash will be the same. This hash is then appended to the file name, so that the name also
+identifies the version of the file (i.e., vendor.h12kj3712k3g83gjk44h.js). This technique is called *cache-busting*.
 
 ### html-webpack-plugin (section 5)
 As you split the code into many different scripts, every single one of those scripts must be referenced in your application index.html.
