@@ -31,3 +31,8 @@ As you split the code into many different scripts, every single one of those scr
 While you can do it manually, it's very error-prone and tedious. In order to solve this, there is a plugin called "html-webpack-plugin",
 that will generate a new index.html from a template every time you build the application. Every script generated from the build will
 be automatically inserted in this HTML!
+
+### webpack-dev-server (section 6)
+Webpack-dev-server is a middleware between a webpack build output and the client. It will watch the source code, and everytime a change ocurr, it will update the
+individual module that was altered, therefore, resulting in a faster build. Also, when using the dev-server, there is no need to manually open a html file.
+Instead, it will serve the files to requests directed to a specific port on the localhost.
