@@ -24,7 +24,7 @@ downloaded everytime the application's main code is updated (i.e., if you update
 no need to download once again the same old libs code).
 
 ### html-webpack-plugin (section 5)
-As you split the code in to many different scripts, every single one of those scripts must be referenced in your application index.html.
-While you can do it manually, it's very error prone and tedious. In order to solve this, there is a plugin called "html-webpack-plugin",
-that will generate a new index.html from a template everytime you build the application. Every script generated from the build will
-be automatically inserted in this html!
+As you split the code into many different scripts, every single one of those scripts must be referenced in your application index.html.
+While you can do it manually, it's very error-prone and tedious. In order to solve this, there is a plugin called "html-webpack-plugin",
+that will generate a new index.html from a template every time you build the application. Every script generated from the build will
+be automatically inserted in this HTML!
